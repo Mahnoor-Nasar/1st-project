@@ -1,0 +1,111 @@
+:root {
+	--white: #fff;
+	--black: #000;
+	--primary: hsl(10, 85%, 58%);
+	--primary-light: hsl(10, 85%, 68%);
+	--secondary: #2e354f;
+	--bg-color: #2e354f;
+	--opacity-light: 0.8;
+	--bold-text: 900;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	font-size: 1.125rem;
+	font-family: 'Lato', sans-serif;
+	background: var(--white);
+	color: var(--secondary);
+}
+
+.container {
+	width: 90%;
+	max-width: 38.75rem;
+	margin: 0 auto;
+}
+
+h1,
+h2,
+p {
+	margin-top: 0;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+	margin-bottom: 1em;
+}
+
+header,
+section {
+	padding: 2.5em 0;
+}
+
+h1 {
+	color: var(--white);
+	font-weight: var(--bold-text);
+	font-size: 2.25em;
+	margin-bottom: 0;
+}
+
+h2 {
+	color: var(--primary);
+	font-weight: var(--bold-text);
+	font-size: 1.5em;
+}
+
+.para-link {
+	color: var(--primary);
+}
+.para-link:hover,
+.para-link:focus {
+	color: var(--primary-light);
+	outline: none;
+}
+
+.btn {
+	display: inline-block;
+	padding: 0.75em 1.25em;
+	margin-right: 1em;
+	text-decoration: none;
+	font-weight: var(--bold-text);
+}
+
+.btn-primary {
+	color: var(--white);
+	background: var(--primary);
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+	background: var(--primary-light);
+	outline: none;
+}
+
+.btn-secondary {
+	color: var(--secondary);
+	background: var(--white);
+}
+
+.btn-secondary:hover,
+.btn-secondary:focus {
+	opacity: var(--opacity-light);
+	outline: none;
+}
+
+header {
+	background: var(--bg-color);
+}
+
+.last-para {
+	margin-bottom: 0;
+}
+
+.section-secondary {
+	color: var(--white);
+	background: var(--bg-color);
+}
